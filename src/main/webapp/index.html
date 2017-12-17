@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+<!--
+    <meta name="_csrf" content="${_csrf.token}"/>
+    <meta name="_csrf_header" content="${_csrf.headerName}"/>
+  -->
+</head>
+<body>
+
+<form class="save" method='post'>
+  <input type="text" name="isbn" placeholder="isbn">
+  <input type="text" name="title" placeholder="title">
+  <input type="text" name="publisher" placeholder="publisher">
+  <input type="text" name="type" placeholder="type">
+  <input type="text" name="author" placeholder="author">
+  <input type="submit" value="save book">
+</form>
+
+<span class="date"></span>
+
+<ul class="books"></ul>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src='js/app.js'></script>
+</body>
+</html>
